@@ -709,3 +709,47 @@ java.lang.NullPointerException: Cannot invoke "com.example.entity.User.getUserna
 2025-10-24 07:59:46 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
 2025-10-24 07:59:46 INFO  USER_REQUEST_LOG - 2025-10-24T07:59:46.699400300 | User: Anonymous | Method: GET | Path: /api/update-whitelist
 2025-10-24 07:59:46 INFO  USER_REQUEST_LOG - 2025-10-24T07:59:46.804339100 | User: Anonymous | Method: GET | Path: /favicon.ico
+2025-10-24 08:39:30 INFO  USER_REQUEST_LOG - 2025-10-24T08:39:30.558199700 | User: Anonymous | Method: POST | Path: /api/login
+2025-10-24 08:42:17 INFO  USER_REQUEST_LOG - 2025-10-24T08:42:16.999011500 | User: Anonymous | Method: POST | Path: /api/login
+2025-10-24 08:44:40 INFO  USER_REQUEST_LOG - 2025-10-24T08:44:40.297063300 | User: Anonymous | Method: POST | Path: /api/login
+2025-10-24 08:45:47 INFO  USER_REQUEST_LOG - 2025-10-24T08:45:47.016296200 | User: bob | Method: GET | Path: /api/get-store-by-province
+2025-10-24 08:48:08 INFO  USER_REQUEST_LOG - 2025-10-24T08:48:08.899931100 | User: bob | Method: POST | Path: /api/update-whitelist
+2025-10-24 08:49:45 INFO  USER_REQUEST_LOG - 2025-10-24T08:49:45.483904 | User: bob | Method: PUT | Path: /api/update-branch/1
+2025-10-24 08:50:10 INFO  USER_REQUEST_LOG - 2025-10-24T08:50:10.281526300 | User: Anonymous | Method: DELETE | Path: /api/delete-branch/1
+2025-10-24 08:50:27 INFO  USER_REQUEST_LOG - 2025-10-24T08:50:27.023083600 | User: bob | Method: DELETE | Path: /api/delete-branch/1
+2025-10-24 08:58:20 INFO  com.example.ApiIntegrationTest - Starting ApiIntegrationTest using Java 17.0.1 with PID 24892 (started by calvindo.sutanto in D:\calvin\projects\IDMProject\springboot-jpa-demo)
+2025-10-24 08:58:20 INFO  com.example.ApiIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+2025-10-24 08:58:22 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-24 08:58:22 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 177 ms. Found 4 JPA repository interfaces.
+2025-10-24 08:58:23 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-24 08:58:23 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2025-10-24 08:58:23 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-10-24 08:58:25 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-24 08:58:25 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-10-24 08:58:26 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7f5e6833
+2025-10-24 08:58:26 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-10-24 08:58:26 WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-10-24 08:58:29 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-24 08:58:29 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-24 08:58:30 INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-10-24 08:58:31 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-24 08:58:32 INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-10-24 08:58:32 INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-10-24 08:58:32 INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 5 ms
+2025-10-24 08:58:32 INFO  com.example.ApiIntegrationTest - Started ApiIntegrationTest in 14.14 seconds (process running for 18.66)
+2025-10-24 08:58:34 INFO  USER_REQUEST_LOG - 2025-10-24T08:58:34.234826100 | User: Anonymous | Method: PUT | Path: /api/update-branch/2
+2025-10-24 08:58:34 INFO  USER_REQUEST_LOG - 2025-10-24T08:58:34.314550900 | User: Anonymous | Method: POST | Path: /api/login
+2025-10-24 08:58:35 INFO  USER_REQUEST_LOG - 2025-10-24T08:58:35.156604900 | User: Anonymous | Method: POST | Path: /api/login
+2025-10-24 08:58:35 INFO  USER_REQUEST_LOG - 2025-10-24T08:58:35.517336 | User: alice | Method: GET | Path: /api/get-store-by-province
+2025-10-24 08:58:35 INFO  USER_REQUEST_LOG - 2025-10-24T08:58:35.982702900 | User: Anonymous | Method: DELETE | Path: /api/delete-branch/2
+2025-10-24 08:58:36 INFO  USER_REQUEST_LOG - 2025-10-24T08:58:36.000905 | User: Anonymous | Method: GET | Path: /api/get-store-by-province
+2025-10-24 08:58:36 INFO  USER_REQUEST_LOG - 2025-10-24T08:58:36.028769300 | User: Anonymous | Method: POST | Path: /api/login
+2025-10-24 08:58:36 INFO  USER_REQUEST_LOG - 2025-10-24T08:58:36.087006700 | User: alice | Method: DELETE | Path: /api/delete-branch/2
+2025-10-24 08:58:36 INFO  USER_REQUEST_LOG - 2025-10-24T08:58:36.296921300 | User: Anonymous | Method: POST | Path: /api/update-whitelist
+2025-10-24 08:58:36 INFO  USER_REQUEST_LOG - 2025-10-24T08:58:36.309948100 | User: Anonymous | Method: POST | Path: /api/login
+2025-10-24 08:58:36 INFO  USER_REQUEST_LOG - 2025-10-24T08:58:36.355139700 | User: alice | Method: PUT | Path: /api/update-branch/2
+2025-10-24 08:58:37 INFO  USER_REQUEST_LOG - 2025-10-24T08:58:37.151329 | User: Anonymous | Method: POST | Path: /api/login
+2025-10-24 08:58:37 INFO  USER_REQUEST_LOG - 2025-10-24T08:58:37.187709700 | User: alice | Method: POST | Path: /api/update-whitelist
+2025-10-24 08:58:37 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-24 08:58:37 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-10-24 08:58:37 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

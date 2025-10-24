@@ -1,0 +1,45 @@
+erDiagram
+    m_province ||--o{ m_branches : contains
+    m_branches ||--o{ m_store : contains
+
+    m_province {
+        int id PK
+        string province_name
+        string alt_name "nullable"
+        
+        datetime created_at 
+        string created_by
+        datetime updated_at "nullable"
+        string updated_by "nullable"
+        datetime deleted_at "nullable"
+        string deleted_by "nullable"
+    }
+    m_branches {
+        int id PK
+        string name
+        datetime deleted_at "nullable"
+        int province_id FK
+
+        datetime created_at 
+        string created_by
+        datetime updated_at "nullable"
+        string updated_by "nullable"
+        datetime deleted_at "nullable"
+        string deleted_by "nullable"
+    }
+    m_store {
+        int id PK
+        string name
+        string address "nullable"
+        string telp "nullable"
+        string post_code "nullable"
+        boolean is_whitelist "true/false"
+        int branch_id FK
+
+        datetime created_at 
+        string created_by
+        datetime updated_at "nullable"
+        string updated_by "nullable"
+        datetime deleted_at "nullable"
+        string deleted_by "nullable"
+    }

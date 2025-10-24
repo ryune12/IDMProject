@@ -38,7 +38,7 @@ server.port=8080
 mvn clean install
 ```
 ---
-## 4. 4. Run the Application
+## 4. Run the Application
 ```
 mvn spring-boot:run
 ```

@@ -95,9 +95,18 @@ VALUES
 (4, 'diana@example.com', 'Diana Prince', crypt('diana123', gen_salt('bf')), 'token_jkl012', 'diana'),
 (5, 'edward@example.com', 'Edward Norton', crypt('edward123', gen_salt('bf')), 'token_mno345', 'edward');
 -- ===========================================================================
+-- Indexes to optimize queries if needed
+-- ===========================================================================
+-- 1. m_stores index for is_whitelist and deleted_at filtering
+CREATE INDEX idx_stores_whitelist_deleted
+ON m_stores (is_whitelist, deleted_at);
 
-SELECT * FROM m_stores;
-SELECT * FROM m_branches;
-SELECT * FROM m_province;
+-- 2. m_branches index for province join
+CREATE INDEX idx_branches_province
+ON m_branches (province_id);
 
-
+-- 3. m_province full-text index on province_name
+CREATE INDEX idx_province_name_ft
+ON m_province
+USING gin (to_tsvector('simple', province_name));
+-- ===========================================================================
