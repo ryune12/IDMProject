@@ -42,3 +42,16 @@ mvn clean install
 ```
 mvn spring-boot:run
 ```
+---
+## 5. Run with Docker (Optional)
+
+If you want to run the project inside Docker:
+
+1.Build the Docker image:
+```
+docker build -t springboot-jpa-demo
+```
+2. Run the docker container:
+```
+docker run -p 8080:8080 springboot-app
+```
