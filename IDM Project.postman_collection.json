@@ -1,0 +1,209 @@
+{
+	"info": {
+		"_postman_id": "6994ae31-5bd5-4498-b59d-30f65484510d",
+		"name": "IDM Project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13043018",
+		"_collection_link": "https://emii-backend.postman.co/workspace/ACC-Workspace~0c069b97-f51c-45f2-8fdc-509532ecc647/collection/13043018-6994ae31-5bd5-4498-b59d-30f65484510d?action=share&source=collection_link&creator=13043018"
+	},
+	"item": [
+		{
+			"name": "Get Store by Province",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "yV6ErpC74d7pH4i7",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/get-store-by-province?province=jakarta",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"get-store-by-province"
+					],
+					"query": [
+						{
+							"key": "province",
+							"value": "jakarta"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Manage whitelist",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "yV6ErpC74d7pH4i7",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "store_ids",
+							"value": "10,20,30",
+							"description": "list id of store",
+							"type": "text"
+						},
+						{
+							"key": "is_whitelist",
+							"value": "false",
+							"description": "true / false",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/api/update-whitelist",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"update-whitelist"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Branch",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "tZXX2W7gGOEjxTTc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "new_name",
+							"value": "Branch New",
+							"description": "new name",
+							"type": "text"
+						},
+						{
+							"key": "province_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/api/update-branch/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"update-branch",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Branch",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "new_name",
+							"value": "Branch New",
+							"description": "list id of store",
+							"type": "text"
+						},
+						{
+							"key": "province_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/api/delete-branch/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"delete-branch",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "bob",
+							"description": "username",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "bob123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/api/login",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

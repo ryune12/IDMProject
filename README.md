@@ -15,6 +15,30 @@ Before running the project, make sure you have the following installed:
 
 ```bash
 git clone https://github.com/ryune12/IDMProject.git
-cd IDMProject
+cd IDMProject/springboot-jpa-demo
+```
 
+---
 
+## 2. Configure Application Properties
+
+Update src/main/resources/application.properties (or application.yml) with your database and environment settings:
+```
+spring.datasource.url=jdbc:postgresql://localhost:5432/your_db
+spring.datasource.username=your_username
+spring.datasource.password=your_password
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+server.port=8080
+```
+
+---
+## 3. Build the Project
+```
+mvn clean install
+```
+---
+## 4. 4. Run the Application
+```
+mvn spring-boot:run
+```
