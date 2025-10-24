@@ -50,8 +50,14 @@ If you want to run the project inside Docker:
 1.Build the Docker image:
 ```
 docker build -t springboot-jpa-demo
-```
-2. Run the docker container:
+```2. Run the docker container:
 ```
 docker run -p 8080:8080 springboot-app
 ```
+
+---
+## 6. Run the data seeder query in your postgresql:
+```
+cd springboot-jpa-demo\src\main\java\com\example\seeder\data.sql
+```
+
